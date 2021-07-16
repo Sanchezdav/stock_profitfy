@@ -3,16 +3,18 @@
 require './app/controllers/portfolio_controller'
 
 class Router
+  attr_reader :request
+
   def initialize(request)
     @request = request
   end
 
   def route!
-    case @request.path
+    case request.path
     when '/'
-      PortfolioController.new(@request).index
+      PortfolioController.new(request.params).index
     when '/portfolio/profit' 
-      PortfolioController.new(@request).profit
+      PortfolioController.new(request.params).profit
     else
       not_found
     end

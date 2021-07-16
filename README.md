@@ -1,5 +1,9 @@
 # Stock Profitfy
 
+## Overview
+
+This is a mini Rack Application from scratch to calculate the Stock Profit.
+
 ## Development
 
 To run the server you just need to execute this command
@@ -8,7 +12,7 @@ To run the server you just need to execute this command
 rackup -p 9292
 ```
 
-Where `-p` is the port of your choice
+Where `-p` is the port of your choice, and go to [http://localhost:9292/](http://localhost:9292/)
 
 ## Stack
 

@@ -1,14 +1,6 @@
 # frozen_string_literal: true
 
 class ApplicationController
-  attr_reader :request
-
-  def initialize(request)
-    @request = request
-  end
-
-  private
-
   def build_response(body, status: 200)
     [status, { "Content-Type" => "text/html" }, [body]]
   end

@@ -4,10 +4,10 @@ require 'date'
 require_relative './application_controller'
 
 class PortfolioController < ApplicationController
-  attr_reader :request
+  attr_reader :params
 
-  def initialize(request)
-    @request = request
+  def initialize(params)
+    @params = params
   end
 
   def index
@@ -15,7 +15,6 @@ class PortfolioController < ApplicationController
   end
 
   def profit
-    params = request.params
     @results = calculate_results(params)
 
     build_response render_template('profit')
