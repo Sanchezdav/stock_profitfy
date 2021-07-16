@@ -12,4 +12,8 @@ class PortfolioController < ApplicationController
   def index
     build_response render_template
   end
+
+  def profit
+    build_response render_template('profit')
+  end
 end

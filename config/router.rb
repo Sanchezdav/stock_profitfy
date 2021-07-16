@@ -8,9 +8,14 @@ class Router
   end
 
   def route!
-    return not_found unless @request.path == "/"
-
-    PortfolioController.new(@request).index
+    case @request.path
+    when '/'
+      PortfolioController.new(@request).index
+    when '/portfolio/profit' 
+      PortfolioController.new(@request).profit
+    else
+      not_found
+    end
   end
 
   private

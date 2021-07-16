@@ -1,9 +1,58 @@
 <html>
   <head>
     <title>Stocks Profitfy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <h1>Stocks Profitf</h1>
-    <p>Calculator coming soon...</p>
+  <body style="padding: 20px; width: 80%; margin: 0 auto; font-family: 'Roboto', sans-serif;">
+    <h1>Stocks Profitfy</h1>
+    <hr>
+    <form action="/portfolio/profit" method="get">
+      <section style="border: 1px solid green; border-radius: 10px; padding: 10px; margin-bottom: 20px;">
+        <h2>The Purchase</h2>
+        <div style="margin-bottom: 15px;">
+          <label for="purchase_date">Date of Purchase:</label><br>
+          <input type="text" id="purchase_date" name="purchase_date">
+        </div>
+        <div style="margin-bottom: 15px;">
+          <label for="purchased_shares_number">Number of Shares Purchased:</label><br>
+          <input type="number" id="purchased_shares_number" name="purchased_shares_number">
+        </div>
+        <div style="margin-bottom: 15px;">
+          <label for="purchase_price">Share Purchase Price:</label><br>
+          <input type="text" id="purchase_price" name="purchase_price">
+        </div>
+        <div style="margin-bottom: 15px;">
+          <label for="purchase_commision">Purchase Commision:</label><br>
+          <input type="text" id="purchase_commision" name="purchase_commision">
+        </div>
+      </section>
+      <section style="border: 1px solid blue; border-radius: 10px; padding: 10px;">
+        <h2>The Sale</h2>
+        <div style="margin-bottom: 15px;">
+          <label for="sale_date">Date of Sale:</label><br>
+          <input type="text" id="sale_date" name="sale_date">
+        </div>
+        <div style="margin-bottom: 15px;">
+          <label for="sold_shares_number">Number of Shares Sold:</label><br>
+          <input type="number" id="sold_shares_number" name="sold_shares_number">
+        </div>
+        <div style="margin-bottom: 15px;">
+          <label for="sell_price">Share Sell Price:</label><br>
+          <input type="text" id="sell_price" name="sell_price">
+        </div>
+        <div style="margin-bottom: 15px;">
+          <label for="dividends_collected">Dividends Collected While Holding:</label><br>
+          <input type="text" id="dividends_collected" name="dividends_collected">
+        </div>
+        <div style="margin-bottom: 15px;">
+          <label for="sale_commision">Commissions Paid During Sale:</label><br>
+          <input type="text" id="sale_commision" name="sale_commision">
+        </div>
+      </section>
+      <br>
+      <input type="submit" value="Submit" style="padding: 10px 30px;">
+    </form>
   </body>
 </html>
