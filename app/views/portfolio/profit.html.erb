@@ -9,5 +9,24 @@
     <h1>Stocks Profitfy</h1>
     <hr>
     <h2 style="color: green;">Results</h2>
+    <section style="border: 1px solid grey; border-radius: 10px; padding: 10px; margin-bottom: 10px;">
+      <h3>Total Costs ($)</h3>
+      <p>$<%= @results[:costs] %></p>
+    </section>
+    <section style="border: 1px solid grey; border-radius: 10px; padding: 10px; margin-bottom: 10px;">
+      <h3>Proceeds ($)</h3>
+      <p>$<%= @results[:proceeds] %></p>
+    </section>
+    <section style="border: 1px solid grey; border-radius: 10px; padding: 10px; margin-bottom: 10px;">
+      <h3>Profit ($)</h3>
+      <p>$<%= @results[:profit] %></p>
+    </section>
+    <section style="border: 1px solid grey; border-radius: 10px; padding: 10px; margin-bottom: 30px;">
+      <h3>Cumulative Return (%)</h3>
+      <p><%= @results[:cumulative_return] %>%</p>
+    </section>
+    <div>
+      <a href="/">Return to home</a>
+    </div>
   </body>
 </html>

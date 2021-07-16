@@ -37,7 +37,8 @@ class ApplicationController
   end
 
   def render_view(file_path)
-    File.read(file_path)
+    raw = File.read(file_path)
+    ERB.new(raw).result(binding)
   end
 
   def view_not_found(view_file)

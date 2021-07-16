@@ -13,42 +13,42 @@
         <h2>The Purchase</h2>
         <div style="margin-bottom: 15px;">
           <label for="purchase_date">Date of Purchase:</label><br>
-          <input type="text" id="purchase_date" name="purchase_date">
+          <input type="text" id="purchase_date" name="purchase_date" placeholder="DD/MM/YYYY" required>
         </div>
         <div style="margin-bottom: 15px;">
           <label for="purchased_shares_number">Number of Shares Purchased:</label><br>
-          <input type="number" id="purchased_shares_number" name="purchased_shares_number">
+          <input type="number" id="purchased_shares_number" name="purchased_shares_number" required>
         </div>
         <div style="margin-bottom: 15px;">
           <label for="purchase_price">Share Purchase Price:</label><br>
-          <input type="text" id="purchase_price" name="purchase_price">
+          <input type="number" step="0.01" id="purchase_price" name="purchase_price" required>
         </div>
         <div style="margin-bottom: 15px;">
           <label for="purchase_commision">Purchase Commision:</label><br>
-          <input type="text" id="purchase_commision" name="purchase_commision">
+          <input type="number" step="0.01" id="purchase_commision" name="purchase_commision">
         </div>
       </section>
       <section style="border: 1px solid blue; border-radius: 10px; padding: 10px;">
         <h2>The Sale</h2>
         <div style="margin-bottom: 15px;">
           <label for="sale_date">Date of Sale:</label><br>
-          <input type="text" id="sale_date" name="sale_date">
+          <input type="text" id="sale_date" name="sale_date" placeholder="DD/MM/YYYY" required>
         </div>
         <div style="margin-bottom: 15px;">
           <label for="sold_shares_number">Number of Shares Sold:</label><br>
-          <input type="number" id="sold_shares_number" name="sold_shares_number">
+          <input type="number" id="sold_shares_number" name="sold_shares_number" required>
         </div>
         <div style="margin-bottom: 15px;">
           <label for="sell_price">Share Sell Price:</label><br>
-          <input type="text" id="sell_price" name="sell_price">
+          <input type="number" step="0.01" id="sell_price" name="sell_price" required>
         </div>
         <div style="margin-bottom: 15px;">
           <label for="dividends_collected">Dividends Collected While Holding:</label><br>
-          <input type="text" id="dividends_collected" name="dividends_collected">
+          <input type="number" step="0.01" id="dividends_collected" name="dividends_collected">
         </div>
         <div style="margin-bottom: 15px;">
           <label for="sale_commision">Commissions Paid During Sale:</label><br>
-          <input type="text" id="sale_commision" name="sale_commision">
+          <input type="number" step="0.01" id="sale_commision" name="sale_commision">
         </div>
       </section>
       <br>
