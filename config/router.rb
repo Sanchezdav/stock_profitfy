@@ -1,14 +1,16 @@
+# frozen_string_literal: true
+
+require './app/controllers/profits_controller'
+
 class Router
   def initialize(request)
     @request = request
   end
 
   def route!
-    if @request.path == "/"
-      [200, { "Content-Type" => "text/plain" }, ["Hello from the Router"]]
-    else
-      not_found
-    end
+    return not_found unless @request.path == "/"
+
+    ProfitsController.new(@request).index
   end
 
   private
