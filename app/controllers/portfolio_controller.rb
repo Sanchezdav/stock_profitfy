@@ -2,7 +2,7 @@
 
 require_relative './application_controller'
 
-class ProfitsController < ApplicationController
+class PortfolioController < ApplicationController
   attr_reader :request
 
   def initialize(request)

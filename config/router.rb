@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require './app/controllers/profits_controller'
+require './app/controllers/portfolio_controller'
 
 class Router
   def initialize(request)
@@ -10,7 +10,7 @@ class Router
   def route!
     return not_found unless @request.path == "/"
 
-    ProfitsController.new(@request).index
+    PortfolioController.new(@request).index
   end
 
   private
